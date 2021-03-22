@@ -1,0 +1,14 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+}
+
+.col-sm-2 {
+    background-color: #cbc39d;
+    height: 100%;
+}
