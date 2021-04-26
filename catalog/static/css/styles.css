@@ -1,14 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+h1, h2 {
+    font-family: 'Orelega One', cursive;
+    letter-spacing: 0.025em;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+strong {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+}
+
 .sidebar-nav {
-    margin-top: 20px;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
 }
 
-.sidebar-nav a {
-    text-decoration: none;
+.row {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
-.col-sm-2 {
-    background-color: #cbc39d;
-    height: 100%;
+.side-menu {
+    background-color: burlywood;
+    width: 200px;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar-nav li {
+    width: 100%;
+    border-bottom: solid 1px gray;
+}
+
+.sidebar-nav a {
+    display: block;
+    text-decoration: none;
+    font-family: 'Orelega One', cursive;
+    font-size: 16pt;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    transition: 1s;
+}
+
+.sidebar-nav li:hover {
+    background-color: brown;
+}
+
+.sidebar-nav li:hover a {
+    transform: scale(1.3);
+    transition: 0.7s;
+}
+
+.main {
+    margin-left: 20px;
 }
