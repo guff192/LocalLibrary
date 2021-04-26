@@ -39,6 +39,7 @@ strong {
 .side-menu {
     background-color: burlywood;
     width: 200px;
+    flex-shrink: 0;
 }
 
 .sidebar-nav {
