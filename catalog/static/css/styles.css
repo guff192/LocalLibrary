@@ -25,46 +25,56 @@ strong {
     line-height: 30px;
 }
 
-.sidebar-nav {
-    margin: 0 auto;
-    padding: 0;
-    list-style-type: none;
-}
-
 .row {
     display: flex;
     flex-flow: row nowrap;
 }
 
-.side-menu {
+.sidebar {
     background-color: burlywood;
     width: 200px;
     flex-shrink: 0;
-}
-
-.sidebar-nav {
     display: flex;
     flex-flow: column;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
 }
 
-.sidebar-nav li {
-    width: 100%;
+.open-menu-button {
+    display: none;
+    line-height: 40px;
+    cursor: pointer;
     border-bottom: solid 1px gray;
-}
-
-.sidebar-nav a {
-    display: block;
-    text-decoration: none;
     font-family: 'Orelega One', cursive;
     font-size: 16pt;
     letter-spacing: 0.06em;
     text-align: center;
     color: white;
+}
+
+.sidebar-nav {
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-entry {
+    width: 100%;
+    border-bottom: solid 1px gray;
+    font-family: 'Orelega One', cursive;
+    font-size: 16pt;
+    letter-spacing: 0.06em;
+    text-align: center;
+}
+
+.sidebar-nav a {
+    display: block;
+    text-decoration: none;
     line-height: 40px;
     transition: 1s;
+    color: white;
 }
 
 .sidebar-nav li:hover {
@@ -80,7 +90,7 @@ strong {
     margin-left: 20px;
 }
 
-.copies {
+.copies .books {
     margin-top: 20px;
     margin-left: 20px;
 }

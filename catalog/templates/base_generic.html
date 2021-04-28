@@ -8,15 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.png' %}">
 </head>
 <body>
 <div class="row">
-    <div class="side-menu">
+    <div class="sidebar tight">
         {% block sidebar %}
-            <ul class="sidebar-nav">
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'books' %}">All books</a></li>
-                <li><a href="{% url 'authors' %}">All authors</a></li>
+            <div id="open-menu-button" class="open-menu-button">☰</div>
+            <ul class="sidebar-nav hidden">
+                <li class="menu-entry"><a href="{% url 'index' %}">Home</a></li>
+                <li class="menu-entry"><a href="{% url 'books' %}">All books</a></li>
+                <li class="menu-entry"><a href="{% url 'authors' %}">All authors</a></li>
             </ul>
         {% endblock %}
     </div>
@@ -39,6 +42,7 @@
             {% endif %}
         {% endblock %}
     </div>
-</div>
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

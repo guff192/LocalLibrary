@@ -1,0 +1,21 @@
+@media (max-width: 700px) {
+    .sidebar {
+        transition: 1s;
+    }
+
+    .open-menu-button {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .tight {
+        width: 15%;
+    }
+
+    .wide {
+        width: 70%;
+    }
+}
