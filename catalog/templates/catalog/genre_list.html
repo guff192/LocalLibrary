@@ -6,7 +6,7 @@
         <ul>
             {% for genre in genre_list %}
                 <li>
-                    <a href="{{ genre.get_absolute_url }}">{{ genre }}</a>
+                    <a href="{{ genre.get_absolute_url }}">{{ genre }}</a> ({{ genre.book_set.all.count }})
                 </li>
             {% endfor %}
         </ul>

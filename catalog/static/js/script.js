@@ -5,9 +5,11 @@ function showMenu() {
     if (sidebar_nav.classList.contains("hidden")) {
         sidebar_nav.classList.remove("hidden");
         side_menu.classList.remove("tight");
+        side_menu.classList.add("wide");
     } else {
         sidebar_nav.classList.add("hidden");
         side_menu.classList.add("tight");
+        side_menu.classList.remove("wide");
     }
 
 }
