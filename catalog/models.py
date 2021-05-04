@@ -17,6 +17,9 @@ class Genre(models.Model):
         """
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('genre-detail', args=[str(self.id)])
+
 
 class Language(models.Model):
     Languages = (("English", "En"), ("Russian", "Ru"), ("French", "Fr"), ("Deutsch", "De"),)
@@ -53,7 +56,7 @@ class BookInstance(models.Model):
     Model representing specific copy of a book
     """
     id = models.UUIDField(primary_key=True, default=uuid.uuid4,
-        help_text="Unique ID for this particular book across whole library", )
+                          help_text="Unique ID for this particular book across whole library", )
     book = models.ForeignKey(Book, on_delete=models.SET_NULL, null=True)
     imprint = models.CharField(max_length=200)
     due_back = models.DateField(null=True, blank=True)

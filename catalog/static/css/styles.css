@@ -87,12 +87,13 @@ strong {
 }
 
 .main {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
-.copies .books {
-    margin-top: 20px;
-    margin-left: 20px;
+.copies, .books {
+    margin: 40px 10px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .text-success {
